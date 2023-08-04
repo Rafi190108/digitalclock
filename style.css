@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  background-color: #333533;
+}
+.flex-container {
+  display: flex;
+}
+.share-btn {
+  background-color: white;
+  padding: 0.65rem 0.8rem;
+  border-radius: 50%;
+}
+#share-link {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem;
+}
+#profile-picture {
+  display: block;
+  width: 100px;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+.profile > h1{
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+.profile > h1 {
+  font-size: 1.70rem;
+}
+
+.links-container {
+  padding: 1rem 0.75rem;
+  list-style-type: none;
+}
+.links-container li {
+  text-align: center;
+  margin: 1rem 0;
+  padding-top: 10px;
+  animation: animasi 3s linear infinite;
+  text-shadow: 0 0 50px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+}
+
+@keyframe animasi {
+  from{
+    filter: hue-rotate(0deg);
+  }
+  to{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.nav-link {
+  display: block;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: 5px 5px red;
+  font-weight: 600;
+  font-family: Roboto Bold;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
